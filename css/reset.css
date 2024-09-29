@@ -1,0 +1,93 @@
+/* Normalize básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%; /* Tamanho da fonte base */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    color: #333; /* Cor do texto */
+    padding: 20px;
+}
+
+/* Títulos */
+h1, h2, h3, h4 {
+    margin-bottom: 0.5em; /* Espaçamento entre títulos */
+    color: #0056b3; /* Cor dos títulos */
+}
+
+/* Estilos para links */
+a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Estilos de botões */
+button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove bordas padrão */
+    padding: 10px 15px; /* Preenchimento do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+}
+
+button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Layout responsivo */
+.container {
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 15px; /* Preenchimento lateral */
+}
+
+/* Flexbox para itens responsivos */
+.flex {
+    display: flex; /* Usa flexbox para layout */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    justify-content: space-between; /* Espaço entre itens */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Menos preenchimento em telas menores */
+    }
+
+    .flex {
+        flex-direction: column; /* Muda a direção para coluna em telas menores */
+    }
+}
+
+/* Acessibilidade: Estilos para elementos de formulário */
+input, textarea {
+    width: 100%; /* Preenche o espaço disponível */
+    padding: 10px; /* Preenchimento interno */
+    margin-bottom: 1em; /* Espaçamento entre campos */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff; /* Cor da borda em foco */
+    outline: none; /* Remove o contorno padrão */
+}
+
+label {
+    margin-bottom: 0.5em; /* Espaçamento inferior */
+    display: block; /* Torna o label um bloco */
+    font-weight: bold; /* Negrito para destacar labels */
+}
