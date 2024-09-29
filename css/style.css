@@ -1,0 +1,47 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.cabecalho__logo {
+    max-width: 100px;
+}
+
+.cabecalho__navegacao {
+    display: flex;
+}
+
+.cabecalho__menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho__item {
+    margin-left: 20px;
+}
+
+.cabecalho__item a {
+    text-decoration: none;
+    color: var(--text-color);
+}
