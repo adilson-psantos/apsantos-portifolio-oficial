@@ -88,3 +88,44 @@ body {
 .sobre__texto {
     font-size: 1em;
 }
+/* Habilidades */
+
+.habilidades__container {
+	display: flex;
+	flex-wrap:wrap;
+	gap:10px;
+}
+
+.habilidades {
+	flex:1;
+	min-width:100px;
+	padding: 20px;
+	border:1px 
+	box-sizing: border-box;
+}
+
+.habilidades__titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.habilidades__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidades__item {
+    margin: 10px;
+    text-align: center;
+}
+
+.habilidades__icone {
+    max-width: 50px;
+}
+
+.habilidades__nome {
+    margin-top: 5px;
+}
